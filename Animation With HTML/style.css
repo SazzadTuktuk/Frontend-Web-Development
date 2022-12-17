@@ -1,0 +1,128 @@
+.background{
+    
+    background-image: url(maxresdefault.jpg);
+    height: 720px;
+    width: 1680px;
+     position: absolute;
+    
+    
+    
+    
+}
+
+.car{
+    animation: car 10s infinite;
+    position: absolute;
+    left:0px; top:500px;
+    
+}
+ 
+.sun{
+    position: absolute;
+    top: 0px; left:300px;
+    
+}
+
+.cloud{
+    position: absolute;
+    animation: clouds 40s infinite;
+    
+    right:0px; top:150px;
+   
+    
+}
+@keyframes car {
+    
+    from{}
+    to{left:1680px; top:500px; }
+    
+}
+
+
+@keyframes clouds{
+     0%   {right:0px; top:0px;}
+    10%  {right:168px; top:0px;}
+    20%  {right:336px; top:0px;}
+   
+    70% {right:1168px; top:0px;}
+    80% {right:1300px; top:0px;}
+    90% {right:1400px; top:0px;}
+    100% {right:1680px; top:0px;}
+}
+
+
+
+.missile {
+  position: absolute;
+    bottom: 0px; left: 0px;
+  
+  animation: missiles 10s infinite;
+    transform: rotate(0deg);
+}
+
+@keyframes missiles{
+     0%   {left:0px; bottom:0px;
+    transform: rotate(0deg);}
+    10%  {left:168px; bottom:168px;
+    transform: rotate(9deg);}
+    20%  {left:336px; bottom:336px;
+    transform: rotate(18deg);}
+   30%  {left:404px; bottom:404px;
+    transform: rotate(27deg);}
+    40%  {left:572px; bottom:500px;
+    transform: rotate(36deg);}
+    50%  {left:740px; bottom:600px;
+    transform: rotate(45deg);}
+    60%  {left:908px; bottom:500px;
+    transform: rotate(54deg);}
+    70% {left:1076px; bottom:404px;
+    transform: rotate(63deg);}
+    80% {left:1244px; bottom:336px;
+    transform: rotate(72deg);}
+    90% {left:1412px; bottom:168px;
+    transform: rotate(81deg);}
+    100% {left:1480px; bottom:30px;
+    visibility: hidden;
+    }
+}
+.explosion{
+    position: fixed;
+    left:1280px; bottom:100px;
+    animation: explode 10s infinite;
+    visibility: hidden;
+    opacity:0;
+    
+    
+
+    
+}
+@keyframes explode{
+    0%   {left:1280px; bottom:100px;
+    visibility: hidden;}
+    10%  {left:1280px; bottom:100px;
+    visibility: hidden;}
+    20%  {left:1280px; bottom:100px;
+    visibility: hidden;}
+   30%  {left:1280px; bottom:100px;
+    visibility: hidden;}
+    40%  {left:1280px; bottom:100px;
+    visibility: hidden;}
+    50%  {left:1280px; bottom:100px;
+    visibility: hidden;}
+    60%  {left:1280px; bottom:100px;
+    visibility: hidden;}
+    70% {left:1280px; bottom:100px;
+    visibility: hidden;}
+    80% {left:1280px; bottom:100px;
+    visibility: hidden;}
+    90% {left:1280px; bottom:100px;
+    visibility: hidden;}
+    100% {left:1280px; bottom:100px;
+    visibility: visible;
+    opacity: 1;}
+        
+        
+    }
+    
+}
+
